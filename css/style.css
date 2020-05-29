@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6em;
+}
+
+/*ヘッダー*/
+header {
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    z-index: 23;
+    background: #ffffff;
+}
+.logo {
+    width: 50%;
+    float: left;
+}
+
+/*予約*/
+.reservation_area {
+    width: 50%;
+    float: left;
+}
+.reservation_area strong,.reservation_area p {
+    color: #ffffff;
+    text-align: center;
+    float: left;
+}
+.reservation_area img {
+    height: 70px;
+    float: left;
+}
+.phone_box,.net_box,.mail_box {
+    height: 70px;
+    background: #ea618e;
+}
+.phone_box {
+    width: 220px;
+    float: left;
+}
+.net_box,.contact_box {
+    width: 180px;
+    float: left;
+}
+
+/*ナビメニュー*/
+.nav {
+    float: right;
+}
+
+/*clearfixの設定*/
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
