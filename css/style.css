@@ -7,17 +7,18 @@ html {
 }
 body {
     font-size: 1.6em;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
 
 /*ヘッダー*/
 header {
     width: 100%;
-    height: 180px;
+    height: 155px;
     position: fixed;
     z-index: 23;
     background: #ffffff;
 }
-.logo {
+h1 {
     width: 50%;
     float: left;
 }
@@ -25,33 +26,95 @@ header {
 /*予約*/
 .reservation_area {
     width: 50%;
-    float: left;
-}
-.reservation_area strong,.reservation_area p {
-    color: #ffffff;
-    text-align: center;
-    float: left;
+    display: flex;
 }
 .reservation_area img {
     height: 70px;
     float: left;
 }
-.phone_box,.net_box,.mail_box {
+.reservation_box {
     height: 70px;
     background: #ea618e;
+    margin: 5px;
+    text-align: left;
 }
 .phone_box {
-    width: 220px;
-    float: left;
+    width: 230px;
 }
 .net_box,.contact_box {
     width: 180px;
-    float: left;
 }
-
+.reservation_box strong {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 70px;
+}
+.phone_box strong {
+    font-size: 2.2rem;
+}
+.phone_box p {
+    font-size: 1rem;
+    color: #ffffff;
+}
 /*ナビメニュー*/
+.navArea {
+    display: flex;
+    margin-top: 30px;
+}
 .nav {
-    float: right;
+    width: 750px;
+    height: 40px;
+    margin: 0 auto;
+}
+.nav ul {
+    display: flex;
+}
+.nav li {
+    position: relative;
+    list-style: none;
+}
+.nav li a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 1.8rem;
+    line-height: 2.4;
+    text-align: center;
+    color: #33141f;
+    transition: 0.5;
+    text-decoration: none;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+.nav li a:hover {/*layer-1*/
+    color: #ff6699;
+}
+.nav li li a {
+    color: #ffffff;
+    background: #ff6699;
+}
+.nav li li a:hover {/*layer-2*/
+    color: #33141f;
+    background: #ff99bb;
+}
+.nav li ul {
+    display: block;
+    top: 40px;
+    position: absolute;
+}
+.nav li ul li {
+    overflow: hidden;
+    height: 0;
+    transition: 0.2s;
+    top: 0;
+}
+.nav li ul li a {
+    border-top: 1px solid #eee;
+}
+.nav li:hover > ul > li {
+    overflow: visible;
+    height: 40px;
 }
 
 /*clearfixの設定*/
