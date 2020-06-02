@@ -60,36 +60,46 @@
         </header>
 
         <main class="clearfix">
-            <div id="viewer">
-                <img src="img/top1.png" style="opacity: 1; z-index: 20;">
-            </div>
+            <section class="top">
+                <div id="viewer">
+                    <img src="img/top1.png" style="opacity: 1; z-index: 20;">
+                    <img src="img/top2.png" style="opacity: 0;">
+                    <img src="img/top3.png" style="opacity: 0;">
+                    <img src="img/top4.png" style="opacity: 0;">
+                    <img src="img/top5.png" style="opacity: 0;">
+                </div>
 
-            <div class="catchcopy">
-                <h2>笑顔とともに、歯の健康を。</h2>
-                <p>患者さんがいつまでも
-                <br>笑顔でいられるように、
-                <br>より良い治療と
-                <br>予防治療を心がけております。</p>
-            </div>
+                <div class="catchcopy">
+                    <h2><span class="span1">笑顔</span>とともに、<span class="span2">歯の健康</span>を。</h2>
+                    <p>
+                    患者さんがいつまでも<br>
+                    笑顔でいられるように、<br>
+                    より良い治療と<br>
+                    予防治療を心がけております。
+                    </p>
+                </div>
+            </section>
 
             <section class="concept">
-                <img src="img/catchcopy.png">
-                <p>コンセプト</p>
+                <img src="img/concept.png">
+                <p>コンセプトコンセプトコンセプトコンセプトコンセプトコンセプト</p>
             </section>
 
             <section class="news">
-                <h3>お知らせ</h3>
-                <p class="english">news</p>
-                <ul>
-                    <li><p class="dete">2020/5/30</p>
-                        <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
-                    <li><p class="dete">2020/5/30</p>
-                        <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
-                    <li><p class="dete">2020/5/30</p>
-                        <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
-                    <li><p class="dete">2020/5/30</p>
-                        <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
-                </ul>
+                <div class="news_abox">
+                    <h3>お知らせ</h3>
+                    <p class="english">news</p>
+                    <ul>
+                        <li><time datetime="2020-05-30">2020/5/30</time>
+                            <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
+                        <li><time>2020/5/30</time>
+                            <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
+                        <li><time>2020/5/30</time>
+                            <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
+                        <li><time>2020/5/30</time>
+                            <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
+                    </ul>
+                </div>
             </section>
 
             <section class="menu">
@@ -135,6 +145,11 @@
                     <h3>アクセス</h3>
                     <p class="english">access</p>
                     <iframe src=""></iframe>
+                    <address>
+                        所在地<br>
+                        アクセス<br>
+                        電話番号
+                    </address>
                 </div>
             </section>
 
@@ -194,5 +209,9 @@
                 <p>UEDA DENTAL CLINIC</p>
             </section>
         </footer>
+
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/scrollreveal.min.js"></script>
+        <script src="js/drawer.js"></script>
     </body>
 </html>
