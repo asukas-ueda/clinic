@@ -134,7 +134,7 @@ h1 {
     bottom: 50px;
     right: 50px;
     z-index: 21;
-    background: #ffffff;
+    background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
     opacity: 0.9;
     display: block;
@@ -160,34 +160,149 @@ h1 {
 /*コンセプト*/
 .concept {
     text-align: center;
-    position: relative;
 }
 .concept img {
-    margin-top: 750px;
+    margin: 750px 0 30px;
     width: 90%;
     border-radius: 100px;
+    position: relative;
 }
 .concept p {
     position: absolute;
-    top: 100px;
-    left: 400px;
+    bottom: -300px;
+    text-align: center;
+}
+
+/*コンテンツ共通*/
+h3 {
+    font-size: 2.8rem;
+}
+.english {
+    letter-spacing: 0.8rem;
 }
 
 /*お知らせ*/
 .news {
     background-color: #ffeaf3;
+    height: 600px;
+    position: relative;
 }
 .news_box{
     background-color: #ffffff;
+    border-radius: 25px;
     width: 80%;
+    padding: 30px 0 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .news h3,
-.news p {
+.english {
     text-align: center;
 }
 .news li {
     display: table;
     margin: 0 auto;
+    width: 70%;
+    padding: 0 0 20px;
+}
+.news a{
+    color: black;
+    text-decoration: none;
+}
+.news a:hover {
+    color: #ff6699;
+}
+time {
+    font-size: 1.2rem;
+}
+.title {
+    border-bottom: solid 1px #333333;
+    padding-bottom: 20px;
+}
+
+/*診療のご案内*/
+.menu {
+    height: 800px;
+}
+.menu h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+.menu_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+}
+.menu_box {
+    background: #ffeaf3;
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    text-align: center;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+.menu_box img {
+    padding-top: 10px;
+    width: 70%;
+}
+.menu_box h4 {
+    font-size: 1.8rem;
+    color: #33141f;
+    padding-top: -20px;
+}
+.menu_area a {
+    text-decoration: none;
+}
+.menu_box:hover {
+    color: #ffffff;
+    background: #ffcce2;
+}
+.fee {
+    text-align: center;
+    margin: 50px 0;
+}
+.fee span {
+    color: #33141f;
+    border: solid 3px #ff6699;
+    font-size: 2rem;
+    padding: 10px 200px;
+    transition: 0.5s;
+}
+.fee a {
+    text-decoration: none;
+}
+.fee span:hover {
+    color: #ffffff;
+    background: #ff6699;
+}
+
+/*基本情報*/
+.basic_info {
+    background-image: url(./../img/basic_info.png);
+    margin-top: 200px;
+    height: 600px;
+    position: relative;
+}
+.basic_area {
+    width: 80%;
+    background: rgb(255, 255, 255, 0.9);
+    padding: 50px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.hours {
+    float: left;
+}
+.hours h3,.access h3 {
+    text-align: center;
 }
 
 /*clearfixの設定*/
