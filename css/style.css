@@ -13,19 +13,21 @@ body {
 /*ヘッダー*/
 header {
     width: 100%;
-    height: 155px;
+    height: 130px;
     position: fixed;
     z-index: 23;
     background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 h1 {
-    width: 50%;
+    width: 45%;
     float: left;
 }
-
+h1 img {
+    width: 90%;
+}
 /*予約*/
 .reservation_area {
-    width: 50%;
     margin-top: 10px;
     display: flex;
 }
@@ -34,34 +36,42 @@ h1 {
     float: left;
 }
 .reservation_box {
-    height: 70px;
+    color: #ffffff;
     background: #ea618e;
-    margin: 5px;
-    text-align: left;
-}
-.phone_box {
-    width: 230px;
-}
-.net_box,.contact_box {
-    width: 180px;
-}
-.reservation_box strong {
-    color: #ffffff;
+    border-radius: 5px;
+    margin: 0 10px;
+    float: left;
+    width: 33.3%;
     text-align: center;
+    position: relative;
+}
+.re_2 {
+    width: 200px;
+}
+.re_info {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.reservation_box:hover {
+    background: #ff99bb;
+}
+.re_info strong {
     font-size: 2rem;
-    line-height: 70px;
 }
-.phone_box strong {
-    font-size: 2.2rem;
+.phone {
+    font-size: 2.4rem;
 }
-.phone_box p {
-    font-size: 1rem;
-    color: #ffffff;
+.re_info p {
+    font-size: 1.2rem;
 }
 /*ナビメニュー*/
 .navArea {
+    width: 55%;
     display: flex;
-    margin-top: 15px;
 }
 .nav {
     width: 750px;
@@ -124,9 +134,9 @@ h1 {
 
 /*トップビジュアル*/
 #viewer img {
-    top: 155px;
-    left: 0;
     position: absolute;
+    top: 130px;
+    left: 0;
     width: 100%;
 }
 .catchcopy {
@@ -159,48 +169,51 @@ h1 {
 }
 /*コンセプト*/
 .concept {
+    padding: 760px 0 40px;
     text-align: center;
+    position: relative;
 }
 .concept img {
-    margin: 750px 0 30px;
     width: 90%;
     border-radius: 100px;
-    position: relative;
 }
 .concept p {
     position: absolute;
-    bottom: -300px;
-    text-align: center;
+    top: 900px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /*コンテンツ共通*/
 h3 {
     font-size: 2.8rem;
+    text-align: center;
 }
-.english {
+.sub_h {
     letter-spacing: 0.8rem;
+    text-align: center;
+    color: #993d5c;
 }
-
+#heading {
+    margin: 50px 0 30px;
+}
 /*お知らせ*/
 .news {
     background-color: #ffeaf3;
-    height: 600px;
+    height: 650px;
     position: relative;
 }
 .news_box{
     background-color: #ffffff;
     border-radius: 25px;
     width: 80%;
-    padding: 30px 0 30px;
+    padding-bottom: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-.news h3,
-.english {
-    text-align: center;
 }
 .news li {
     display: table;
@@ -211,6 +224,7 @@ h3 {
 .news a{
     color: black;
     text-decoration: none;
+    transition: 0.5s;
 }
 .news a:hover {
     color: #ff6699;
@@ -220,7 +234,7 @@ time {
 }
 .title {
     border-bottom: solid 1px #333333;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 /*診療のご案内*/
@@ -228,7 +242,6 @@ time {
     height: 800px;
 }
 .menu h3 {
-    text-align: center;
     margin-top: 50px;
 }
 .menu_area {
@@ -290,21 +303,102 @@ time {
 }
 .basic_area {
     width: 80%;
+    height: 500;
     background: rgb(255, 255, 255, 0.9);
     padding: 50px 40px;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.hours {
+.basic_box {
+    width: 50%;
+    height: 370px;
     float: left;
 }
-.hours h3,.access h3 {
-    text-align: center;
+.sub_h2 {
+    padding-bottom: 20px;
+}
+/*診療時間*/
+.hours table {
+    table-layout: fixed;
+    width: 460px;
+    border-collapse: collapse;
+}
+.hours th {
+    border-bottom: solid 2px #993d5c;
+    height: 50px;
+}
+.table1 {
+    width: 110px;
+    font-size: 1.4rem;
+    text-align: right;
+}
+.table2 {
+    width: 60px;
+}
+.hours td {
+    padding: 15px 0;
+}
+.pink {
+    font-size: 2rem;
+    color: #ff6699;
+}
+.closed_day {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 10px 15px 0;
+}
+/*アクセス*/
+.map iframe {
+    width: 500px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+address p {
+    font-style: normal;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    text-align: left;
+    margin-top: 5px;
 }
 
+/*ご予約・お問い合わせ*/
+.contact_area {
+    display: flex;
+}
+.contact_box {
+    color: #ffffff;
+    background: #ea618e;
+    border-radius: 5px;
+    margin: 30px;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    position: relative;
+}
+.contact_box img {
+    width: 40%;
+    margin-right: 6px;
+    float: left;
+}
+.contact_info {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.contact_info strong {
+    font-size: 2.8rem;
+}
+.contact_info p {
+    font-size: 1.4rem;
+}
 /*clearfixの設定*/
 .clearfix::after{
     content: "";

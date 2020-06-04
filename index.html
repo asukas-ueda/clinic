@@ -12,21 +12,21 @@
 
             <div class="reservation_area">
                 <div class="reservation_box">
-                    <div class="phone_box">
-                        <img src="img/phone.png">
-                        <strong class="phone_s">00-0000-000</strong>
-                        <p>9:00~19:00/休診日：日祝</p>
+                    <img src="img/phone.png">
+                    <div class="re_info">
+                        <strong class="phone">00-0000-000</strong>
+                        <p>9:00~19:00/休診：日祝</p>
                     </div>
                 </div>
-                <div class="reservation_box">
-                    <div class="net_box">
-                        <img src="img/net.png">
+                <div class="reservation_box re_2">
+                    <img src="img/net.png">
+                    <div class="re_info">
                         <strong>ネット予約</strong>
                     </div>
                 </div>
-                <div class="reservation_box">
-                    <div class="mail_box">
-                        <img src="img/mail.png">
+                <div class="reservation_box re_2">
+                    <img src="img/mail.png">
+                    <div class="re_info">
                         <strong>お問い合わせ</strong>
                     </div>
                 </div>
@@ -87,8 +87,10 @@
 
             <section class="news">
                 <div class="news_box">
-                    <h3>お知らせ</h3>
-                    <p class="english">news</p>
+                    <div id="heading">
+                        <h3>お知らせ</h3>
+                        <p class="sub_h">news</p>
+                    </div>
                     <ul>
                         <li><time datetime="2020-05-30">2020/5/30</time>
                             <a href="#"><p class="title">コメントコメントコメントコメント</p></a></li>
@@ -103,8 +105,10 @@
             </section>
 
             <section class="menu">
-                <h3>診療のご案内</h3>
-                <p class="english">menu</p>
+                <div id="heading">
+                    <h3>診療のご案内</h3>
+                    <p class="sub_h">menu</p>
+                </div>
                 <div class="menu_area">
                     <a href="#">
                         <div class="menu_box">
@@ -151,77 +155,96 @@
 
             <section class="basic_info">
                 <div class="basic_area">
-                    <div class="hours">
-                        <h3>診療時間</h3>
-                        <p class="english">hours</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>月</th>
-                                    <th>火</th>
-                                    <th>水</th>
-                                    <th>木</th>
-                                    <th>金</th>
-                                    <th>土</th>
-                                    <th>日・祝</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>9:00〜12:00</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>ー</td>
-                                </tr>
-                                <tr>
-                                    <td>14:00〜19:00</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>●</td>
-                                    <td>ー</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="basic_box">
+                        <div class="hours">
+                            <h3>診療時間</h3>
+                            <p class="sub_h sub_h2">hours</p>
+                            <table>
+                                <thead>
+                                    <tr class="underline">
+                                        <th class="table1"></th>
+                                        <th>月</th>
+                                        <th>火</th>
+                                        <th>水</th>
+                                        <th>木</th>
+                                        <th>金</th>
+                                        <th>土</th>
+                                        <th class="table2">日・祝</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table1">9:00〜12:00</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="table2">ー</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table1">14:00〜19:00</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="pink">●</td>
+                                        <td class="table2">ー</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="closed_day">※休診日：日曜・祝日</p>
+                        </div>
                     </div>
 
-                    <div class="access">
-                        <h3>アクセス</h3>
-                        <p class="english">access</p>
-                        <iframe src=""></iframe>
-                        <address>
-                            所在地<br>
-                            アクセス<br>
-                            電話番号
-                        </address>
+                    <div class="basic_box">
+                        <div class="access">
+                            <h3>アクセス</h3>
+                            <p class="sub_h sub_h2">access</p>
+                            <div class="map">
+                                <iframe src=""></iframe>
+                            </div>
+                            <address>
+                                <p>
+                                    所在地　：東京都渋谷区渋谷３丁目<br>
+                                    アクセス：渋谷駅新南口徒歩1分<br>
+                                    電話番号：00-0000-000
+                                </p>
+                            </address>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="contact">
-                <h3>ご予約・お問合せ</h3>
-                <p class="english">contact</p>
-                <div class="contact_box">
-                    <img src="img/phone.png">
-                    <strong>00-0000-000</strong>
-                    <p>9:00~19:00/休診日:日祝</p>
+                <div id="heading">
+                    <h3>ご予約・お問合せ</h3>
+                    <p class="sub_h">contact</p>
                 </div>
+                <div class="contact_area">
+                    <div class="contact_box">
+                        <img src="img/phone.png">
+                        <div class="contact_info">
+                            <strong>00-0000-000</strong>
+                            <p>9:00~19:00/休診日:日祝</p>
+                        </div>
+                    </div>
 
-                <div class="contact_box">
-                    <img src="img/net.png">
-                    <strong>ネットのご予約</strong>
-                </div>
+                    <div class="contact_box">
+                        <img src="img/net.png">
+                        <div class="contact_info">
+                            <strong>ネットのご予約</strong>
+                        </div>
+                    </div>
 
-                <div class="contact_box">
-                    <img src="img/mail.png">
-                    <strong>お問い合わせ</strong>
+                    <div class="contact_box">
+                        <img src="img/mail.png">
+                        <div class="contact_info">
+                            <strong>お問い合わせ</strong>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
