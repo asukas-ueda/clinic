@@ -1,0 +1,87 @@
+/*タブレット*/
+@media screen and (max-width: 1024px) {
+    /*ヘッダー*/
+    h1 img {
+        width: 100%;
+        padding: 5px;
+    }
+    .reservation_area {
+        display: none;
+    }
+
+    .catchcopy {
+        top: 350px;
+        right: 20px;
+        bottom: 0;
+        height: 120px;
+    }
+    .catchcopy h2 {
+        font-size: 1.8rem;
+    }
+    .catchcopy p {
+        font-size: 1.4rem;
+    }
+    .concept {
+        height: 100px;
+        padding: 600px 0 250px;
+    }
+    /*ナビ*/
+    .nav ul {
+        padding: 20px;
+    }
+    .nav li {
+        display: block;
+    }
+    .navArea {
+        position: absolute;
+        top: -120px;
+        left: 0px;
+        width: 100%;
+        transition-duration: .5s;
+        z-index: 22;
+    }
+
+    /*ハンバーガーメニュー*/
+    #target {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        -webkit-transition: 1s;
+        transition: 1s;
+    }
+    .target_inner {
+        width: 30px;
+        height: 30px;
+    }
+    .target_inner_line {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        -webkit-transition: 1s;
+        transition: 1s;
+        border-radius: 4px;
+    }
+    .target_inner_1 {
+        top: 4px;
+    }
+    .target_inner_2 {
+        top: 14px;
+    }
+    .target_inner_3 {
+        bottom: 4px;
+    }
+}
+
+/*スマホ*/
+@media screen and (max-width: 480px) {
+    .menu_area {
+        display: grid;
+    }
+}

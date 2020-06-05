@@ -44,6 +44,7 @@ h1 img {
     width: 33.3%;
     text-align: center;
     position: relative;
+    transition: 0.2s;
 }
 .re_2 {
     width: 200px;
@@ -146,14 +147,13 @@ h1 img {
     z-index: 21;
     background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
-    opacity: 0.9;
     display: block;
     padding: 30px 20px;
+    height: 180px;
 }
 .catchcopy h2 {
     text-align: center;
     font-size: 3.2rem;
-    opacity: 1;
 }
 .catchcopy p {
     display: table;
@@ -169,7 +169,7 @@ h1 img {
 }
 /*コンセプト*/
 .concept {
-    padding: 760px 0 40px;
+    padding: 760px 0 50px;
     text-align: center;
     position: relative;
 }
@@ -284,7 +284,7 @@ time {
     border: solid 3px #ff6699;
     font-size: 2rem;
     padding: 10px 200px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .fee a {
     text-decoration: none;
@@ -367,6 +367,9 @@ address p {
 }
 
 /*ご予約・お問い合わせ*/
+.contact {
+    margin-bottom: 50px;
+}
 .contact_area {
     display: flex;
 }
@@ -379,6 +382,10 @@ address p {
     width: 33.3%;
     text-align: center;
     position: relative;
+    transition: 0.2s;
+}
+.contact_box:hover {
+    background: #ff99bb;
 }
 .contact_box img {
     width: 40%;
@@ -398,6 +405,52 @@ address p {
 }
 .contact_info p {
     font-size: 1.4rem;
+}
+.description {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #993d5c;
+    padding-top: 10px;
+}
+/*フッター*/
+.footer_menu {
+    background: #ffeaf3;
+    text-align: center;
+}
+.f_nav {
+    width: 60%;
+    padding: 50px 0 50px;
+    margin: 0 auto;
+}
+.f_nav ul li {
+    font-size: 1.8rem;
+    color: #33141f;
+    list-style: none;
+    text-align: left;
+    line-height: 2.8rem;
+}
+.f_nav li ul {
+    display: flex;
+}
+.f_nav li li {
+    list-style: none;
+    text-align: left;
+    margin-right: 20px;
+}
+.f_nav li li a {
+    color: #993d5c;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.c {
+    color: #ffffff;
+    background: #33141f;
+    font-size: 1.2rem;
+    font-family: none;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    padding: 5px 0 5px;
 }
 /*clearfixの設定*/
 .clearfix::after{
