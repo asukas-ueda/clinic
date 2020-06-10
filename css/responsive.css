@@ -6,6 +6,15 @@
         padding: 5px;
     }
     .reservation_area {
+        position: absolute;
+        top: 10%;
+        right: 20%;
+    }
+    .reservation_box {
+        width: auto;
+        height: auto;
+    }
+    .re_info {
         display: none;
     }
 
@@ -147,23 +156,33 @@
         height: auto;
     }
 
+    .access h3 {
+        margin-top: 50px;
+    }
     table {
         margin-left: auto;
         margin-right: auto;
     }
-    .hours p,
+    .close_day,
     address p {
         margin-left: 150px;
     }
 
     /*予約・お問い合わせ*/
     .contact_area {
-        display: initial;
-        width: 100%;
+        display: block;
     }
     .contact_box {
         width: 60%;
         text-align: center;
+        clear: both;
+    }
+
+    /*clearfixの設定*/
+    .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
     }
 }
 
