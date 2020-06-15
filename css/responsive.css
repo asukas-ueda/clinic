@@ -175,26 +175,55 @@
     .contact_box {
         width: 60%;
         text-align: center;
-        clear: both;
-    }
-
-    /*clearfixの設定*/
-    .clearfix::after{
-        content: "";
-        display: block;
-        clear: both;
     }
 }
 
 /*スマホ*/
-@media screen and (max-width: 480px) {
-    .menu_area {
-        display: initial;
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 2em;
     }
-    .menu_box {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        height: auto;
+    h3 {
+        font-size: 3.4rem;
+    }
+    h4 {
+        font-size: 2.4rem;
+    }
+    /*ヘッダー*/
+    header {
+        height: 180px;
+    }
+    #target,
+    .target_inner {
+        width: 70px;
+        height: 70px;
+    }
+    .target_inner_line {
+        width: 70px;
+        height: 4px;
+    }
+    .target_inner_1 {
+        top: 2px;
+    }
+    .target_inner_2 {
+        top: 31px;
+    }
+    .target_inner_3 {
+        bottom: 2px;
+    }
+    .linea,
+    .linec {
+        top: 30px;
+    }
+
+    h1 img {
+        width: auto;
+        height: 160px;
+    }
+    .menu {
+        height: 1150px;
+    }
+    .menu_area {
+        grid-template-columns: 1fr 1fr;
     }
 }
