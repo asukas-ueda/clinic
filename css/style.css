@@ -24,7 +24,8 @@ h1 {
     float: left;
 }
 h1 img {
-    width: 90%;
+    width: auto;
+    height: 110px;
 }
 /*予約*/
 .reservation_area {
@@ -143,8 +144,8 @@ h1 img {
 }
 .catchcopy {
     position: absolute;
-    bottom: 15%;
-    right: 10%;
+    bottom: 330px;
+    right: 50px;
     z-index: 21;
     background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
