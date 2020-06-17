@@ -160,19 +160,19 @@
 
     /*お知らせ*/
     .news {
-        height: 600px;
+        height: 800px;
     }
     .title {
         font-size: 1.4rem;
     }
 
     /*診療メニュー*/
+    .menu {
+        height: auto;
+    }
     .menu_box {
         width: auto;
         height: auto;
-    }
-    .fee {
-        margin: auto;
     }
     .fee span {
         padding: 10px 50px;
@@ -195,8 +195,7 @@
         margin-right: auto;
         width: 100%;
     }
-    .close_day,
-    address p {
+    .close_day{
         margin-left: 150px;
     }
     .access h3 {
@@ -206,14 +205,24 @@
         width: 80%;
         height: auto;
     }
+    address p {
+        margin-left: 60px;
+    }
 
     /*予約・お問い合わせ*/
     .contact_area {
         display: block;
+        overflow: hidden;
+        width: 100%;
     }
     .contact_box {
         width: 60%;
-        text-align: center;
+        margin: 20px 20%;
+    }
+
+    /*フッター*/
+    .f_nav {
+        width: 90%;
     }
 
     /*clearfixの設定*/
@@ -230,57 +239,108 @@
         font-size: 2em;
     }
     h3 {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
-    h4 {
-        font-size: 2.4rem;
+    .sub_h {
+        font-size: 1.4rem;
     }
     /*ヘッダー*/
     header {
-        height: 140px;
+        height: 80px;
     }
     #target {
-        top: 30px;
+        top: 20px;
+        right: 15px;
     }
     #target,
     .target_inner {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
     }
     .target_inner_line {
-        width: 70px;
+        width: 40px;
         height: 4px;
     }
     .target_inner_1 {
         top: 2px;
     }
     .target_inner_2 {
-        top: 31px;
+        top: 18px;
     }
     .target_inner_3 {
         bottom: 2px;
     }
     .linea,
     .linec {
-        top: 30px;
+        top: 20px;
+    }
+    .reservation_area {
+        top: 80px;
+    }
+    .reservation_box img {
+        width: 30px;
+        height: 30px;
     }
 
     h1 img {
         width: auto;
-        height: 90px;
-        margin: 15px 0;
+        height: 50px;
+        margin: 10px 0;
+    }
+    #viewer img {
+        top: 80px;
     }
     /*診療メニュー*/
-    .menu {
-        height: 1150px;
-    }
     .menu_area {
         grid-template-columns: 1fr 1fr;
+    }
+    .menu_box h4 {
+        font-size: 1.4rem;
+        padding-bottom: 20px;
     }
     /*診療時間*/
     .hours th,
     .table1,
-    .pink {
+    .pink,
+    address p {
         font-size: 1.2rem;
+    }
+    .table1,.table2 {
+        width: 40px;
+    }
+    .table1 {
+        text-align: left;
+    }
+    address p {
+        width: 100%;
+        margin-left: 0;
+        letter-spacing: initial;
+    }
+    /*予約*/
+    .contact_box {
+        width: 80%;
+        margin: 10px 10%;
+    }
+    .contact_info strong,
+    .description {
+        font-size: 2rem;
+    }
+    .description {
+        padding: 0 20px;
+    }
+
+    /*フッター*/
+    .f_nav li ul {
+        display: initial;
+    }
+    .f_nav {
+        width: 70%;
+    }
+    .f_nav ul li {
+        line-height: 3rem;
+    }
+    .c {
+        font-size: 1rem;
+        letter-spacing: .2rem;
     }
 }

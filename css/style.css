@@ -136,6 +136,9 @@ h1 img {
 }
 
 /*トップビジュアル*/
+#viewer {
+    position: relative;
+}
 #viewer img {
     position: absolute;
     top: 130px;
@@ -143,10 +146,8 @@ h1 img {
     width: 100%;
 }
 .catchcopy {
-    position: absolute;
-    bottom: 330px;
-    right: 50px;
-    z-index: 21;
+    padding-top: 1000px;
+    z-index: 10;
     background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
     display: block;
