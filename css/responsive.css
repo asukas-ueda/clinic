@@ -23,17 +23,18 @@
         display: none;
     }
 
+    #viewer img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
     .catchcopy {
-        top: 350px;
-        right: 20px;
+        top: 400px;
+        left: 50%;
+        transform: translate(-50%, -50%);
         bottom: 0;
-        height: 120px;
-    }
-    .catchcopy h2 {
-        font-size: 1.8rem;
-    }
-    .catchcopy p {
-        font-size: 1.4rem;
+        width: 50%;
+        height: 150px;
     }
 
     /*コンセプト*/
@@ -289,6 +290,9 @@
     }
     #viewer img {
         top: 80px;
+    }
+    .catchcopy {
+        top: 350px;
     }
     /*診療メニュー*/
     .menu_area {

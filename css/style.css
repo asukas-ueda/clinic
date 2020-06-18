@@ -136,32 +136,39 @@ h1 img {
 }
 
 /*トップビジュアル*/
+.top {
+    position: relative;
+}
 #viewer {
     position: relative;
 }
 #viewer img {
+    display: block;
     position: absolute;
     top: 130px;
     left: 0;
     width: 100%;
 }
 .catchcopy {
-    padding-top: 1000px;
-    z-index: 10;
+    position: absolute;
+    top: 400px;
+    right: 5%;
     background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
     display: block;
-    padding: 30px 20px;
-    height: 180px;
+    padding: 30px;
+    width: 40%;
+    height: auto;
+    z-index: 30;
 }
 .catchcopy h2 {
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 2.5vmax;
 }
 .catchcopy p {
     display: table;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 2vmin;
     color: #404040;
 }
 .span1 {
