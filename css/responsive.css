@@ -34,7 +34,7 @@
         transform: translate(-50%, -50%);
         bottom: 0;
         width: 50%;
-        height: 150px;
+        height: 130px;
     }
 
     /*コンセプト*/
@@ -44,7 +44,13 @@
     }
     .concept img {
         width: 100%;
+        height: 250px;
+        object-fit: cover;
         border-radius: 0;
+    }
+    .concept p {
+        font-size: 1.8rem;
+        padding: 100px 0;
     }
     /*ナビ*/
     .navArea {

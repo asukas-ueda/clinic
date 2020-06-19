@@ -186,8 +186,10 @@ h1 img {
 .concept img {
     width: 90%;
     border-radius: 100px;
+    opacity: 0.5;
 }
 .concept p {
+    font-size: 2rem;
     position: absolute;
     top: 75%;
     left: 50%;
