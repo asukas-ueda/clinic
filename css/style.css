@@ -278,7 +278,6 @@ time {
 .menu_box h4 {
     font-size: 1.8rem;
     color: #33141f;
-    padding-top: -20px;
 }
 .menu_area a {
     text-decoration: none;
@@ -315,7 +314,6 @@ time {
 }
 .basic_area {
     width: 80%;
-    height: 500;
     background: rgb(255, 255, 255, 0.9);
     padding: 50px 40px;
     text-align: center;
@@ -455,7 +453,7 @@ address p {
     font-size: 1.4rem;
 }
 
-.c {
+.Copyright {
     color: #ffffff;
     background: #33141f;
     font-size: 1.2rem;
